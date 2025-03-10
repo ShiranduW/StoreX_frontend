@@ -69,7 +69,7 @@ const ShippingAddressForm = ({ cart }) => {
                 <FormItem>
                   <FormLabel>Line 1</FormLabel>
                   <FormControl>
-                    <Input placeholder="16/1" {...field} />
+                    <Input placeholder="Enter Apartment, Suite, Building" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -80,9 +80,9 @@ const ShippingAddressForm = ({ cart }) => {
               name="line_2"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Line 1</FormLabel>
+                  <FormLabel>Line 2</FormLabel>
                   <FormControl>
-                    <Input placeholder="Main St" {...field} />
+                    <Input placeholder="Enter Street Name, Floor, Landmark" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -95,7 +95,7 @@ const ShippingAddressForm = ({ cart }) => {
                 <FormItem>
                   <FormLabel>City</FormLabel>
                   <FormControl>
-                    <Input placeholder="Kadawatha" {...field} />
+                    <Input placeholder="Enter City" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -108,7 +108,7 @@ const ShippingAddressForm = ({ cart }) => {
                 <FormItem>
                   <FormLabel>State/Province</FormLabel>
                   <FormControl>
-                    <Input placeholder="Wester Province" {...field} />
+                    <Input placeholder="Enter Province" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -121,7 +121,7 @@ const ShippingAddressForm = ({ cart }) => {
                 <FormItem>
                   <FormLabel>Zip Code</FormLabel>
                   <FormControl>
-                    <Input placeholder="11850" {...field} />
+                    <Input placeholder="Enter Zip Code" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -134,7 +134,7 @@ const ShippingAddressForm = ({ cart }) => {
                 <FormItem>
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
-                    <Input placeholder="+94702700100" {...field} />
+                    <Input placeholder="+94123456789" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

@@ -5,7 +5,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const Api = createApi({
   reducerPath: "Api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:8000/api/",
+    // baseUrl: "http://localhost:8000/api/",
+    baseUrl: "https://storex-backend-shirandu.onrender.com/api/",
     prepareHeaders: async (headers, { getState }) => {
       const token = await window.Clerk?.session?.getToken();
       if (token) {
@@ -32,6 +33,9 @@ export const Api = createApi({
         method: "POST",
         body,
       }),
+    }),
+    getProduct: builder.query({
+      query: (id) => `/products/${id}`,
     }),
   }),
 });

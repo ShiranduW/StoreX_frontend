@@ -5,6 +5,7 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 
 import { Api } from "./api";
 
+// Setup store
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
