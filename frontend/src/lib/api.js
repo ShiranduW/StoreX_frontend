@@ -33,6 +33,9 @@ export const Api = createApi({
         body,
       }),
     }),
+    getProduct: builder.query({
+      query: (id) => `/products/${id}`,
+    }),
   }),
 });
 
